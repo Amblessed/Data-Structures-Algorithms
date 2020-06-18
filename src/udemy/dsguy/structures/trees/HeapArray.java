@@ -94,7 +94,8 @@ public class HeapArray {
 	}//end of method
 	
 
-	public void HeapifyBottomToTop(int index) {
+	public void HeapifyBottomToTop(int index)
+	{
 		int parent = index / 2;
 		// We are at root of the tree. Hence no more Heapifying is required.
 		if (index <= 1)
@@ -102,7 +103,8 @@ public class HeapArray {
 			return;
 		}
 		// If Current value is smaller than its parent, then we need to swap
-		if (arr[index] < arr[parent]) {
+		if (arr[index] < arr[parent])
+		{
 			int tmp = arr[index];
 			arr[index] = arr[parent];
 			arr[parent] = tmp;
@@ -110,14 +112,18 @@ public class HeapArray {
 		HeapifyBottomToTop(parent);
 	}//end of method
 
-	public void HeapifyTopToBottom(int index) {
+	public void HeapifyTopToBottom(int index)
+	{
 		int left  = index*2;
 		int right = (index*2)+1;
 		int smallestChild = 0;
 		
-		if (sizeOfTree < left) { //If there is no child of this node, then nothing to do. Just return.
+		if (sizeOfTree < left)
+		{ //If there is no child of this node, then nothing to do. Just return.
 			return; 
-		}else if (sizeOfTree == left) { //If there is only left child of this node, then do a comparison and return.
+		}
+		else if (sizeOfTree == left)
+		{ //If there is only left child of this node, then do a comparison and return.
 			if(arr[index] > arr[left]) {
 				int tmp = arr[index];
 				arr[index] = arr[left];

@@ -43,3 +43,10 @@
 ***AVL Tree***
 --An AVL Tree is a balanced *Balanced Search Tree* where the height of immediate subtrees of any node differs by at most one (aka Balanced factor)
 --If at any time heights differ by more than one, rebranding is done to restore this property (called rotation).
+
+
+***Binary Heap Tree***
+--Binary Heap is a binary tree with some special properties
+--Value of any node must be less than or equal to value of its children (Min-Heap)
+--Value of any node must be greater than or equal to value of its children (Max-Heap)
+--Complete tree: all levels are completely filled except possibly the last level and the last level has all keys as left as possible

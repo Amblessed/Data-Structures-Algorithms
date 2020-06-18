@@ -1,0 +1,45 @@
+***Trees***
+--Used to represent data in hierarchical form
+--Every node has 2 components (Data and References to its sub-category)
+--At top, it has a root node and 2 "disjoint binary tree" called left sub-tree and right sub-tree.
+
+***Trees Terminologies
+--Root: Node with no parent
+--Edge: Link from Parent to Child
+--Leaf: NOde with no children
+--Sibling: Children of same parent
+--Ancestor: means parent, grand-parent, great grand-parent and so on for a given node.
+--Depth of Node: Length of the path from the root to node.
+--Height of Node: Length of the path from that node to the deepest node.
+--Height of tree: Same as height of root node
+--Depth of tree: Same as depth of root node
+--Predecessor: of a node is the immediate previous node in inorder traversal of the binary tree.
+--Successor: of a node is the immediate next node in inorder traversal of the binary tree.
+
+
+***Binary Tree***
+--A tree is called a binary tree if each node has zero, one or two children
+--It is a family of Data Structure(BST, Heap tree, AVL, Red-Black etc)
+
+
+***Types of Binary Tree***
+--Strict Binary Tree: if each node has either 2 children or none.
+--Full Binary Tree: if each non leaf node has 2 children and all leaf nodes are at the same level.
+--Complete Binary Tree: if all levels are completely filled except possibly the last level and the last level has all keys as left as possible.
+
+
+**Depth First Search
+--Preorder Traversal: first we visit the root, then the left subtree and the right subtree.
+--Inorder Traversal
+--Postorder Traversal
+
+
+***Binary Search Tree***
+--Binary Search Tree is a binary tree in which all the nodes follows the below-mentioned properties
+---- The left sub tree of a node has a key less than or equal to its parent node's key
+---- The right sub tree of a node has a key greater than its parent node's key
+
+
+***AVL Tree***
+--An AVL Tree is a balanced *Balanced Search Tree* where the height of immediate subtrees of any node differs by at most one (aka Balanced factor)
+--If at any time heights differ by more than one, rebranding is done to restore this property (called rotation).

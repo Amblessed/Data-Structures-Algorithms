@@ -12,7 +12,8 @@ public class DirectChaining {
 	
 
 	// HashFunction to be used on Keys
-	public int simpleASCIIHashFunction(String x, int M) {
+	public int simpleASCIIHashFunction(String x, int M)
+	{
 		char ch[];
 		ch = x.toCharArray();
 		int i, sum;
@@ -26,15 +27,21 @@ public class DirectChaining {
 	
 	
 	//Insert Key in HashTable
-	public void insertKeyInHashTable(String value) {
+	public void insertKeyInHashTable(String value)
+	{
 		int newIndex = simpleASCIIHashFunction(value, hashTable.length); //returns in which index we need to store this string
-		if(hashTable[newIndex] == null) {
+		System.out.println("The hashtable length is " + hashTable.length);
+		if(hashTable[newIndex] == null)
+		{
 			System.out.println("Index: " + newIndex + " is empty. Creating a new LinkedList there...");
 			hashTable[newIndex] = new LinkedList<String>(); 
 			hashTable[newIndex].add(value);
+			System.out.println("The new length for this index is " + hashTable[newIndex].size());
 			System.out.println("Successfully inserted " + "\"" + value + "\"" + " in location: " + newIndex);
 			System.out.println("-------------------------------------------\n");
-		}else {
+		}
+		else
+		{
 			System.out.println("\nIndex: " + newIndex + " is having sufficient space. Inserting there...");
 			hashTable[newIndex].add(value);
 			System.out.println("Successfully inserted " + "\"" + value + "\"" + " in location: " + newIndex);
@@ -42,8 +49,6 @@ public class DirectChaining {
 		}
 	}//end of method
 
-	
-		
 	//Search for a given key in hashTable
 	public boolean searchKeyInHashTable(String stringToBeSearched) {
 		int newIndex = simpleASCIIHashFunction(stringToBeSearched, hashTable.length);

@@ -50,3 +50,22 @@
 --Value of any node must be less than or equal to value of its children (Min-Heap)
 --Value of any node must be greater than or equal to value of its children (Max-Heap)
 --Complete tree: all levels are completely filled except possibly the last level and the last level has all keys as left as possible
+
+
+***Hashing****
+Hashing is a method of sorting and indexing data. The idea behind hashing is to allow large amounts of data to be indexed using keys commonly created by formulas.
+Hash function: A hash function is any function that can be used to map data of arbitrary size to data of fixed size.
+Key: Input data given by the user
+Hash Value: The values returned by a hash function are called hash values, hash codes, digests, or simply hashes.
+Hash table: It is a data structure which implements an associative array abstract data type, a structure that can map keys to values.
+
+**Characteristics of good Hash function
+--- It distributes hash values uniformly across the hash table
+-- The hash function uses all the input data.
+
+***Collision Resolution Techniques
+-- Direct Chaining: implements the buckets as linked lists. Colliding elements are stored in these lists. Here the hash table can never be full.
+-- Open Addressing: Linear Probing, Quadratic Probing and Double Hashing
+      linear Probing: is a strategy for resolving collisions, by placing the new key into the closest following empty cell.
+      Quadratic Probing: operates by taking the original hash index and adding successive values of an arbitrary quadratic polynomial until an open slot is found
+      Double Hashing: interval between probes is computed by another hash function

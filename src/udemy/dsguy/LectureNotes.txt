@@ -64,5 +64,8 @@ Hash table: It is a data structure which implements an associative array abstrac
 -- The hash function uses all the input data.
 
 ***Collision Resolution Techniques
--- Direct Chaining
+-- Direct Chaining: implements the buckets as linked lists. Colliding elements are stored in these lists. Here the hash table can never be full.
 -- Open Addressing: Linear Probing, Quadratic Probing and Double Hashing
+      linear Probing: is a strategy for resolving collisions, by placing the new key into the closest following empty cell.
+      Quadratic Probing: operates by taking the original hash index and adding successive values of an arbitrary quadratic polynomial until an open slot is found
+      Double Hashing: interval between probes is computed by another hash function

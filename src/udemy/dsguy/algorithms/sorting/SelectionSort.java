@@ -1,15 +1,21 @@
 package udemy.dsguy.algorithms.sorting;
 
 public class SelectionSort {
-	
-	static void selectionSort(int[] a) {
-		for (int j = 0; j<a.length; j++) {
+	//The Selection Sort algorithm is based on the idea of finding the minimum or maximum element in an unsorted array and then putting it in it
+	//correct position in a sorted array.
+
+	public static void selectionSort(int[] a)
+	{
+		for (int j = 0; j<a.length; j++)
+		{
 			int minimumIndex = j;
-			for (int i=j+1; i<a.length; i++) {
+			for (int i=j+1; i<a.length; i++)
+			{
 				if (a[i] < a[minimumIndex]) //find which is the smallest element to right of 'j'
 					minimumIndex = i;
 			}//end of inner loop
-			if (minimumIndex != j) { // if j is not minimum index then swap
+			if (minimumIndex != j)
+			{ // if j is not minimum index then swap
 				int temp = a[j];
 				a[j] = a[minimumIndex];
 				a[minimumIndex] = temp;
@@ -18,8 +24,10 @@ public class SelectionSort {
 	}//end of method
 
 	
-	public static void printArray(int []array) {
-		for (int i = 0; i < array.length; i++) {
+	public static void printArray(int []array)
+	{
+		for (int i = 0; i < array.length; i++)
+		{
 			System.out.print(array[i]+"  ");
 		}
 	}//end of method

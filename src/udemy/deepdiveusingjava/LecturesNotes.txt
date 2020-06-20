@@ -1,0 +1,15 @@
+***Data Structures***
+-- Organizes and stores data
+-- Each has strengths and weaknesses
+
+
+***Algorithms***
+-- There can be many implementations of the same algorithm
+
+
+***Big-O Notation***
+O(1) --> Constant
+O(log n) --> Logarithmic
+O(n) --> Linear
+O(nlogn) --> n times log n
+O(n^2) --> Quadratic

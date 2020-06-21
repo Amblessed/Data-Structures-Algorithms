@@ -13,3 +13,19 @@ O(log n) --> Logarithmic
 O(n) --> Linear
 O(nlogn) --> n times log n
 O(n^2) --> Quadratic
+
+
+***Abstract Data Type***
+-- Doesn't dictate how the data is organized
+-- Dictates the operations you can perform
+-- Concrete data structures is usually a concrete class
+-- Abstract data type is usually an interface
+
+
+***Single Linked List***
+-- Each item in the list is called a Node
+-- The first item in the list is the head of the list
+
+***Double Linked List***
+-- Each item in the list has a next and previous fields
+-- The list has a head and tail

@@ -9,15 +9,6 @@ public class DoubleLinkedList<T> extends LinkedListDouble{
 		tail = null;
 	}
 
-	/*DoubleNode createDoubleLinkedList(int nodeValue) {
-		head = new DoubleNode();
-		DoubleNode node = new DoubleNode();
-		node.setValue(nodeValue);
-
-		size=1;// size =1
-		return head;
-	}*/
-
 	public void add(T nodeValue)
 	{
 		insertInLinkedList(nodeValue, getSize());

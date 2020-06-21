@@ -13,7 +13,7 @@ public class LinkedListDouble<T> {
     public boolean existsLinkedList()
     {
         //if head is not null return true otherwise return false
-        return head!=null;
+        return head != null;
     }
 
     //Search for a node in linked list
